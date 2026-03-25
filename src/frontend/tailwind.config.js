@@ -16,7 +16,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
+        sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+        display: ['Bricolage Grotesque', 'system-ui', 'sans-serif'],
       },
       colors: {
         border: "oklch(var(--border))",
@@ -74,10 +75,14 @@ export default {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+        xl: "1rem",
+        "2xl": "1.25rem",
+        "3xl": "1.5rem",
       },
       boxShadow: {
-        xs: "0 1px 2px 0 rgba(0,0,0,0.05)",
-        glow: "0 0 20px oklch(0.60 0.17 145 / 0.3)",
+        card: "0 6px 18px rgba(17,24,39,0.08)",
+        "card-hover": "0 12px 32px rgba(17,24,39,0.14)",
+        sm: "0 1px 3px rgba(17,24,39,0.08)",
       },
       keyframes: {
         "accordion-down": {
@@ -88,10 +93,15 @@ export default {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        "fade-up": {
+          from: { opacity: "0", transform: "translateY(20px)" },
+          to: { opacity: "1", transform: "translateY(0)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "fade-up": "fade-up 0.5s ease-out forwards",
       },
     },
   },

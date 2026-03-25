@@ -1,4 +1,4 @@
-import { Shield } from "lucide-react";
+import { Phone, Shield } from "lucide-react";
 import { SiFacebook, SiInstagram, SiX } from "react-icons/si";
 
 export default function Footer() {
@@ -22,9 +22,7 @@ export default function Footer() {
               >
                 <Shield className="w-4 h-4 text-white" />
               </div>
-              <span className="font-black text-lg text-foreground">
-                PataBet
-              </span>
+              <span className="font-black text-lg text-foreground">BetKE</span>
             </div>
             <p className="text-xs text-muted-foreground">
               Kenya's premier sports betting platform. Bet responsibly.
@@ -76,11 +74,25 @@ export default function Footer() {
           </div>
           <div>
             <h4 className="text-xs font-bold uppercase tracking-widest text-foreground mb-3">
-              Contact
+              Support
             </h4>
             <ul className="space-y-2 text-xs text-muted-foreground">
-              <li>support@patabeat.co.ke</li>
-              <li>+254 700 000 000</li>
+              <li className="flex items-center gap-2">
+                <Phone
+                  className="w-3 h-3 flex-shrink-0"
+                  style={{ color: "oklch(0.60 0.17 145)" }}
+                />
+                <a
+                  href="tel:+254757833315"
+                  className="hover:text-foreground transition-colors font-semibold"
+                  style={{ color: "oklch(0.74 0.14 75)" }}
+                >
+                  0757 833 315
+                </a>
+              </li>
+              <li className="text-xs" style={{ color: "oklch(0.50 0.01 230)" }}>
+                Available 24/7 for support
+              </li>
               <li className="flex items-center gap-3 pt-1">
                 <span className="cursor-pointer hover:text-foreground transition-colors">
                   <SiFacebook className="w-4 h-4" />
